@@ -17,7 +17,9 @@ Python从语法层面并没有像Java或C#那样提供对抽象类的支持，
 
 
 class Pet(object, metaclass=ABCMeta):
-    """宠物"""
+    """宠物
+        抽象类，只能继承，不能够创建对象.
+    """
 
     def __init__(self, nickname):
         self._nickname = nickname
@@ -43,6 +45,7 @@ class Cat(Pet):
 
 
 def main():
+    # p = Pet()
     pets = [Dog('旺财'), Cat('凯蒂'), Dog('大黄')]
     for pet in pets:
         pet.make_voice()
