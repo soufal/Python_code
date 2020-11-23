@@ -153,7 +153,6 @@ def main():
         # # ball_image = pygame.image.load('./')
         # # # 在窗口上渲染图像
         # # screen.blit(ball_image, (50,50))
-        #
         # # 刷新当前窗口（渲染窗口将绘制的图像呈现出来）
         # pygame.display.flip()
         # # 每隔50毫秒就改变小球的位置再刷新窗口
